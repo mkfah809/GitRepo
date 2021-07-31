@@ -33,12 +33,6 @@ public class RunnableClass_Assign2 {
 	     CollectAndValidate guess = new CollectAndValidate();
      	   guess.getGuess();
 	     
-//	     CollectAndValidate valid = new CollectAndValidate();
-//	     valid.IsValid();
-	     
-	     
-     	  CollectAndValidate rand = new CollectAndValidate();
- 	     rand.getRandom();
 
 	
 	}

@@ -2,38 +2,42 @@ package com.coderscampus.Assign2;
 import java.util.*;
 
 
+
+
 public class CollectAndValidate {
 	
-	
-	
+
+
+	// Five attempts.
 	 int numberOfTries = 1;
+	 
+	 //Guessing User Input.
      int userGuessNumber;
      Scanner userInput = new Scanner(System.in);
+     
+     //randomNumber.
      int randomNumber = (int) (Math.random() * 99 + 1);   
     
- 
+
      
      //  collect the guess 
 	 int getGuess()
 	{
 	
+		 System.out.println(randomNumber);
 		 do {
 	         userGuessNumber = userInput.nextInt();
-
+	        
 			 if(IsValid() == false);
 			 {
-                     
+				       
                
                if (userGuessNumber == randomNumber)
                {    
                    System.out.println("OOhhOO!, You Win the Game!");
                    break;
                }
-//               else if(userGuessNumber < 1 || userGuessNumber>100)
-//               {
-//       	       	 System.out.println("Your guess is not between 1 and 100, please try again\r\n" + "\r\n"+ "");
-//       	       	numberOfTries = numberOfTries - 1;
-//               }
+
                else if (userGuessNumber < randomNumber)
                {
                    System.out.println("Please pick a higher number.");
@@ -51,7 +55,8 @@ public class CollectAndValidate {
            }
                numberOfTries++;
 //           
-
+  
+	       
          
        } while (userGuessNumber != randomNumber);
 		return userGuessNumber;
@@ -69,14 +74,7 @@ public class CollectAndValidate {
 	  	      getGuess();
 	          
 	          }
-	 		  // IsInt?
-//	 		  if (!userInput.hasNextInt())
-//	 		  {
-//	 			  valid=false;
-//	 		 //    numberOfTries = numberOfTries - 1;
-//	 			  System.out.println("Enter a valid number");
-//	 		  }
-	 		
+		
 	 		return valid;
 	 	}
 	 
@@ -88,6 +86,18 @@ public class CollectAndValidate {
 		  return randomNumber;
 	}
 	
-	
+//	boolean IsInt()
+//	{
+//		   boolean intNumber = true;
+//		   
+//		  if (userGuessNumber != (int)userGuessNumber)
+//		  {
+//			  intNumber=false;
+//		 //    numberOfTries = numberOfTries - 1;
+//			  System.out.println("Enter a valid number");
+//		  }
+//
+//		return intNumber;
+//	}
 	 
 }

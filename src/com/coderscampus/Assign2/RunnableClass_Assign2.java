@@ -30,10 +30,12 @@ public class RunnableClass_Assign2 {
 		System.out.println("Welcome to Guess Number Game \nYou Will Be Asked To Guess A Number To Win The Game \nYou have Maximum 5 Attemp Limit\n\n\n");
 	     System.out.print("Enter a guess number between 1 to 100\n");
 	     
+	     
 	     CollectAndValidate guess = new CollectAndValidate();
      	   guess.getGuess();
 	     
-
+     	  CollectAndValidate random = new CollectAndValidate();
+    	  random.getRandom();
 	
 	}
 }

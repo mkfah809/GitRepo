@@ -23,7 +23,6 @@ public class CollectAndValidate {
      //  collect the guess 
 	 int getGuess()
 	{
-
 		 
 		 do {
 	         userGuessNumber = userInput.nextInt();
@@ -49,6 +48,7 @@ public class CollectAndValidate {
                if(numberOfTries == 5) 
                {
                    System.out.println("You lose!\r\n" + "\r\n" + "");
+                   getRandom();
                    break;
                    
                }

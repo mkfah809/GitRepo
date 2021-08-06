@@ -23,7 +23,8 @@ public class CollectAndValidate {
      //  collect the guess 
 	 int getGuess()
 	{
-		 
+	        System.out.println("The number to guess was: " + randomNumber);
+
 		 do {
 	         userGuessNumber = userInput.nextInt();
 	        

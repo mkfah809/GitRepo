@@ -34,7 +34,7 @@ public class RunnableClass_Assign2 {
 	     
 	     CollectAndValidate guess = new CollectAndValidate();
      	   guess.getGuess();
-//     	   guess.getRandom();
+     	   guess.getRandom();
 
 	
 	}
